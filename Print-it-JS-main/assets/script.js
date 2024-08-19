@@ -27,15 +27,44 @@ let ArrowLeft = document.querySelector(".arrow_left")
 let BulletPoint = document.querySelector(".dots")
 console.log(BulletPoint)
 
+let slider = document.getElementById("Slider")
+console.log(slider)
+
+let slidergroup = slider.getElementsByClassName("imgslide")
+
+let NumbersSlide = slidergroup.length
+console.log(NumbersSlide)
+
+let Indexslider = 0 
+
+
 ArrowLeft.addEventListener('click', () => {
-	test()
+	PreviousSlides()
 	console.log("flechegauche")
 })
 
 ArrowRight.addEventListener('click', () =>{
+	NextSlides()
 	console.log("flechedroite")
 })
 
-function test (){
+function NextSlides (){
+	Indexslider++
+	if (Indexslider >= NumbersSlide) {
+		Indexslider = 0;
+	}
+	AfficherImages(Indexslider)
 	console.log("coucou")
+}
+
+function PreviousSlides (){
+	console.log("diapo précedente")
+}
+
+function AfficherImages (){
+	let Imgslider = document.querySelector(".imgslider");
+	for (let i = 0; i < NumbersSlide; i++ ){
+		Imgslider[i].classList.remove("active")
+	}
+	Imgslider[Indexslider].classList.add("active")
 }
