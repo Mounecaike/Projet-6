@@ -104,6 +104,15 @@ header {
 	background-color: var(--secondary-color);
 }
 
+.imgslide {
+	display: none;
+}
+
+.imgslide.active {
+	display: block;
+}
+
+
 #banner {
 	display: flex;
 	flex-direction: column;
