@@ -160,8 +160,9 @@ header {
 .dot.active {
 	background-color: #fff;
 }
+
 /* Fin du code CSS pour le carousel */
-#banner p {
+#banner .caption {
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 900;
 	font-size: 50px;
