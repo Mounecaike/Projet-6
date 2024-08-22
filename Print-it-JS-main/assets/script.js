@@ -71,7 +71,10 @@ function PreviousSlides (){
 function AfficherImages (){
 	for (let i = 0; i < NumbersSlide; i++ ){
 		slides[i].image.classList.remove("active")
+		BulletPoint[i].classList.remove("active")
 	}
 	slides[Indexslider].image.classList.add("active")
+	BulletPoint[Indexslider].classList.add("active")
 }
 AfficherImages()
+
