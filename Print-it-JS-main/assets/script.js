@@ -22,7 +22,6 @@ const slides = [
 		caption: "Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
-console.log(slides)
 
 let ArrowRight = document.querySelector(".arrow_right")
 //console.log(ArrowRight)
@@ -30,13 +29,12 @@ let ArrowRight = document.querySelector(".arrow_right")
 let ArrowLeft = document.querySelector(".arrow_left")
 //console.log(ArrowLeft)
 
-let BulletPoint = document.querySelector(".dots")
+let BulletPoint = document.querySelectorAll(".dot")
+console.log(BulletPoint)
 
 let slider = document.getElementById("Slider")
 
-
 let NumbersSlide = slides.length
-console.log(NumbersSlide)
 
 let Indexslider = 0 
 
@@ -56,7 +54,6 @@ function NextSlides (){
 		Indexslider = 0;
 	}
 	AfficherImages()
-	console.log("coucou")
 }
 
 function PreviousSlides (){
@@ -65,7 +62,6 @@ function PreviousSlides (){
 		Indexslider = NumbersSlide - 1;
 	}
 	AfficherImages()
-	console.log("diapo précedente")
 }
 
 function AfficherImages (){
@@ -77,4 +73,3 @@ function AfficherImages (){
 	BulletPoint[Indexslider].classList.add("active")
 }
 AfficherImages()
-
