@@ -71,5 +71,7 @@ function AfficherImages (){
 	}
 	slides[Indexslider].image.classList.add("active")
 	BulletPoint[Indexslider].classList.add("active")
+	let captionElement = document.getElementById("caption");
+    captionElement.innerHTML = slides[Indexslider].caption;
 }
 AfficherImages()
