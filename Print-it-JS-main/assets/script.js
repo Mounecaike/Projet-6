@@ -1,4 +1,4 @@
-// tableau avec les images et texte
+// table with images and text
 let imagetableau = [];
 const slides = [
 	{
@@ -18,7 +18,7 @@ const slides = [
 		caption: "Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
-// Variable flêche 
+// Variable
 const ArrowRight = document.querySelector(".arrow_right")
 
 const ArrowLeft = document.querySelector(".arrow_left")
@@ -49,7 +49,7 @@ ArrowRight.addEventListener('click', () =>{
 	AfficherImages()
 })
 
-// fonction
+// function
 
 function BulletPointAdd () {
 	BulletPoint.innerHTML = '';
